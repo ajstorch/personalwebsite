@@ -1,0 +1,425 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+
+
+/* Icons */
+
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+	/*position: relative;*/
+	display: flex;
+	justify-content: center;
+}
+
+	ul.icons li {
+		display: inline-block;
+		padding: 0 1.25em 0 0;
+	}
+
+		ul.icons li .icon{
+			font-size: 2em;
+		} 
+		
+		ul.icons li:last-child {
+			padding-right: 0; /*Remove padding from the rightmost icon (for centering properly)*/
+		}
+
+		.icon {
+		color: lightgray;
+		text-decoration: none; /*remove underline*/
+		position: relative:
+		} 
+
+			.icon > .label {
+				display: none;
+			}
+
+.icons.aboutme{
+	display: flex;
+	justify-content: flex-start;
+	padding: 10px 0;
+}
+
+.aboutme .smallicon{
+	color: rgb(54, 53, 53);
+}
+
+/* Copyright */
+.copyright {
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+	padding-top: 1em;
+}
+
+/*Navigation Bar*/
+
+.navbar {
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+	overflow: hidden;
+	z-index: +1; /*bring to the front*/
+}
+
+.change-color {
+    background-color: white; /*change color to white once scrolling (see main.js)*/
+}
+
+.navbar .container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.navbar-name{
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+}
+.nav li {
+	display: inline-block;
+	padding-right: 2em;
+	color: white;
+	text-decoration: none; /*remove underline*/
+}
+
+.nav a, .navbar-name a {
+	color: rgb(54, 53, 53);
+}
+
+
+/* Homebanner */
+
+header {
+	background-color: #4686a0;
+	background-image: url("../pictures/IMG_0764.JPG");
+	background-position: center;
+	background-size: cover; /*resize background image to scale to page*/
+	background-repeat: no-repeat; 
+	text-align: left;
+
+	/* Make sure container fills the screen at all times */
+	height: 100vh; 
+	}
+
+.inner {
+	padding: 25vh 20vh; 
+}
+
+/* Containers */
+
+.container {
+	margin: 0 auto;
+	max-width: calc(100% - 4em);
+	/*width: 60em;*/
+	display: flex;
+	padding: 4em;
+	justify-content: center; /*Center in middle of section (left-right)*/
+	align-items: center;
+}
+
+.imagecontainer{
+	padding: 1.5em;
+}
+
+.textcontainer{
+	padding: 1em;
+	max-width: 600px;
+}
+
+#pictures-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	padding:10px 0 0 0;
+}
+
+
+.picture-box{
+	border: 1px solid #6e6e6e;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border-width: 0;
+	color: #00132C;
+	font-family: "Avenir Next LT W01 Bold",sans-serif;
+	box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+	margin: 13px;
+			 
+}
+
+.button-container{
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+.photo-section .container{
+	flex-direction: column;
+	
+}
+
+.votecount-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+/* Sections */
+
+.section{
+	min-height: 400px;
+	display: flex;
+	justify-content: center; /*Center in middle of section (left-right)*/
+	align-items: center;
+}
+
+.short-section .container{
+	min-height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /*Center in middle of section (left-right)*/
+	align-items: center;
+	z-index: -1;
+	background-color: #f0f4f7;
+}
+
+.photo-section{
+	min-height: 400px;
+}
+#blog{
+	background-color: #f0f4f7;
+}
+
+.horizontal-line.short.centered {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: rgb(54, 53, 53);
+    margin: 20px auto;
+}
+
+.horizontal-line.short.left-aligned {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: rgb(54, 53, 53);
+    margin: 20px 0px;
+}
+
+.textcontainer p{
+	text-align: justify;
+}
+
+ul.button-container{
+	z-index: +1; 
+}
+
+/*Buttons*/
+/*Code for this button largely copied from the internet to make it pretty, but adjusted to my needs (e.g. left and right, etc)*/
+
+.button {
+	background-color: transparent;
+	border: 1px solid #5c5c5c;
+	box-sizing: border-box;
+	color: #00132C;
+	font-family: "Avenir Next LT W01 Bold",sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 12px 18px;
+	position: relative;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	margin: 20px;
+  }
+  
+  .button:hover,
+  .button:active {
+	outline: 0;
+  }
+  
+  .button:hover {
+	background-color: transparent;
+	cursor: pointer;
+  }
+  
+  .button:before {
+	content: "";
+	height: calc(100% + 3px);
+	position: absolute;
+	right: -7px;
+	top: -9px;
+	transition: background-color 300ms ease-in;
+	width: 100%;
+	z-index: -1;
+  }
+  
+  .button.left:hover:before {
+	background-color: #ffba90;
+  }
+  
+  .button.right:hover:before {
+	background-color: #ffb9fd;
+  }
+
+  .button.left:before{
+	background-color: #ffdfd1;
+  }
+
+  .button.right:before {
+	background-color: #ffdbfe;
+  }
+
+
+.button a {
+	color: rgb(54, 53, 53);
+}
+
+
+.button.left{
+	margin: 20px 0;
+}
+
+/*Bottom Button*/
+/*Code for this button largely copied from the internet to make it pretty, but adjusted to my needs*/
+.bottombutton {
+			  background-color: transparent;
+			  border: 1px solid #6e6e6e;
+			  box-sizing: border-box;
+			  color: #00132C;
+			  font-family: "Avenir Next LT W01 Bold",sans-serif;
+			  font-size: 16px;
+			  font-weight: 700;
+			  line-height: 24px;
+			  padding: 16px 23px;
+			  position: relative;
+			  text-decoration: none;
+			  user-select: none;
+			  -webkit-user-select: none;
+			  touch-action: manipulation;
+			  
+			}
+			
+			.bottombutton:hover,
+			.bottombutton:active {
+			  outline: 0;
+			}
+			
+			.bottombutton:hover {
+			  background-color: transparent;
+			  cursor: pointer;
+			}
+			
+			.bottombutton:before {
+			  background-color: #ffdfd1;
+			  content: "";
+			  height: calc(100% + 3px);
+			  position: absolute;
+			  right: -7px;
+			  top: -9px;
+			  width: 100%;
+			  z-index: -1; 
+			}
+			
+			.bottombutton:hover:before {
+			  background-color:  #ffba90;
+			}
+			
+			
+
+.button.right a {
+	color: rgb(54, 53, 53);
+}
+
+.button.left a {
+	color: rgb(54, 53, 53);
+}
+
+.button.left{
+	margin: 20px 0;
+}
+
+.vote-button{
+	background-color: transparent;
+	border: 1px solid #6e6e6e;
+	border-width: 0;
+	padding: 10px 3px 10px 0px ;
+	font-size: 1em;
+	color: rgb(179, 179, 179);
+	box-sizing: border-box;
+}
+
+.vote-button:hover{
+	color: rgb(94, 94, 94);
+}
+
+.downvote-button{
+	padding: 12px 3px 10px 20px ;
+}
+
+.votecounter-div{
+	width: 30px;
+	height: 30px;
+	padding: 10px 5px;
+	color:rgb(54, 53, 53);
+	box-sizing: border-box;
+	font-size: 0.8em;
+}
+
+.dislike-div{
+	width: 50px;
+	height: 30px;
+	padding: 10px 10px 10px 5px;
+	color:rgb(54, 53, 53);
+	box-sizing: border-box;
+	font-size: 0.8em;
+}
+
+/*Picture*/
+
+img.big{
+	width: 290px;
+	height: 360px;
+	object-fit: cover;
+}
+
+
+.picture-box img{
+	/*padding: 2em;*/
+	object-fit: cover;
+	width: 250px;
+	height: 250px ;
+}
+
+/* Footer */
+
+	#footer {
+		padding: 6em 0 6em 0 ;
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed;
+		background-image: url("../pictures/IMG_0723.JPG");
+		background-position: top left;
+		background-size: cover; /*resize background image to scale to page*/
+		text-align: center;
+	}
+
+			#footer a:hover {
+				color: #ffffff;
+			}
+
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Anna-Julia Storch</title>
+		
+		<!-- These two lines provide automatic page and style reloading when files change -->
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/lib/client/updater.js" defer></script>
+
+		<!-- Include the Lato font -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- Use FontAwesome for icons -->
+		<script src="https://kit.fontawesome.com/9e3ebcd0b9.js" crossorigin="anonymous"></script>
+
+		<!-- Connect CSS Files -->
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/basic.css" />
+
+		<!-- Connect JS Files -->
+		<script type="module" src="js/main.js"></script>
+        <script type="module" src="js/App.js"></script>
+
+	</head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Header Middle -->
+            <div class="navbar">
+                <div class="container">
+                    <div class="navbar-name">
+                        <a href="#">
+                            JULIA
+                        </a>
+                    </div>
+
+                    <div>
+                        <ul class="nav">
+							<li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#photography">Photography</a></li>
+                            <li><a href="#final">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Middle -->
+    
+
+		<!-- Home Banner -->
+			<section id="home" class = "frontpage">
+				<div class="inner">
+					<h3 class="white-color">Hello! I'm</h3>
+                    <h1 class="white-color">Anna-Julia <div>Storch</div></h1>
+                    <h4 class="white-color">SKIING & SURFING |  PHOTOGRAPHY  |  ENTREPRENEURSHIP  |  WEB DEVELOPMENT  |  DATA SCIENCE</h4>
+				</div>
+			</section>
+		
+		</header>
+        <!-- Home Banner End -->
+        <!-- Header End -->
+
+
+	    <!-- about me -->
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="imagecontainer">
+                            <img class="big imageborder" src="pictures/Storch_Anna-Julia_303242 copy.jpg" title="" alt="" >
+                    </div>
+                        <div class="textcontainer">
+                            <div class="section-title">
+                                <h2>About Me</h2>
+                                <div class="horizontal-line short left-aligned"></div>
+                            </div>
+                            <h5>Hello! I'm Anna-Julia Storch</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <ul class="icons aboutme">
+                                <li><a href="https://twitter.com/AnnaJuliaStorch"><i class="fa-brands fa-twitter smallicon"></i></a></li>
+                                <li><a href="https://github.com/ajstorch"><i class="fa-brands fa-github smallicon"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/anna-julia-storch-517142144/"><i class="fa-brands fa-linkedin-in smallicon"></i></a></li>
+                            </ul>
+                            <ul class=button-container>
+                                <button class="button small left"><a href="mailto: ajstorch@stanford.edu">Email Me</button>
+                                <button class="button small right" role="button"><a href="CV/Storch_Anna-Julia_Resume.pdf" download>Download CV</a></button>
+                            </ul>
+                        </div>
+                </div>
+            </section>
+        <!-- end about me -->
+        
+        <!-- Blog -->
+        <section id="blog" class="section">
+            <div class="container">
+                    <div class="textcontainer">
+                        <div class="section-title">
+                            <h2>Recent Blog Post</h2>
+                            <div class="horizontal-line short left-aligned"></div>
+                        </div>
+                        <h5>Op-Ed From The Future</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="imagecontainer">
+                        <img class="big imageborder" src="pictures/neonbrand-MEbT27ZrtdE-unsplash.jpg" title="" alt="" >
+                    </div>
+            </div>
+        </section>
+        <!-- end about me -->
+        
+        <!-- Photography Section-->
+			<section id="photography" class="photo-section">
+                <div class="container">
+                            <div><h2>Photography</h2></div>  
+                            <div class="horizontal-line short centered"></div>
+                            <p>California & Oregon </p>
+				    <div class="container" id="pictures-container">
+    
+                    </div>   
+                </div>         
+            </section>
+        <!-- End Photography Section-->
+
+        <!-- Finale Section -->
+			<section id="final" class="short-section">
+				<div class="container">
+					<div><h2>Want to see more photography?</h2></div>
+                    <div class="horizontal-line short centered"></div>
+					<p>Follow me here</p>
+					<ul class=button-container>
+                        <button class="bottombutton button" role="button"><a href="https://www.flickr.com/photos/135511812@N06/">Learn More</a></button>
+					</ul>
+				</div>
+			</section>
+        
+        <!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/anna-julia-storch-517142144/" class="icon fa-brands fa-linkedin"><span class="label">LinkeIn</span></a></li>
+					<li><a href="https://github.com/ajstorch" class="icon fa-brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto: ajstorch@stanford.edu" class="icon fa-solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<p style="color: lightgray;">&copy; Anna-Julia Storch</p>
+				</ul>
+			</section>
+        <!-- End Footer -->
+
+	</body>
+</html>
